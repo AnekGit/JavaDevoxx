@@ -1,0 +1,18 @@
+pipeline{
+    
+    agent any 
+    
+     stages{
+     
+        stage("SCM Checkout"){
+        
+            steps{
+                git credentialsId: 'AnekGit', url: 'https://github.com/AnekGit/JavaDevoxx.git'
+            }
+            
+        }
+        
+    }
+    
+    
+}
