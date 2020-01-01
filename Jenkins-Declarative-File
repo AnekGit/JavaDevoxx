@@ -7,7 +7,9 @@ pipeline{
         stage("SCM Checkout"){
         
             steps{
-                git credentialsId: 'AnekGit', url: 'https://github.com/AnekGit/JavaDevoxx.git'
+                
+                echo "Already Checked Out from Git"
+                //git credentialsId: 'AnekGit', url: 'https://github.com/AnekGit/JavaDevoxx.git'
             }
             
         }
