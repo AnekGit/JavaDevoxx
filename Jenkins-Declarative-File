@@ -12,9 +12,14 @@ pipeline{
                 //git credentialsId: 'AnekGit', url: 'https://github.com/AnekGit/JavaDevoxx.git'
             }
             
+        }//stage
+        
+        stage("Maven Package"){
+         sh "mvn clean package"
         }
         
-    }
+        
+    }//stages
     
     
-}
+}//pipeline
