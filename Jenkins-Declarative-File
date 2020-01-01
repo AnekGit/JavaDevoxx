@@ -1,7 +1,10 @@
 pipeline{
     
     agent any 
- 
+    enviornment{
+    
+    PATH = "$M2_HOME:$PATH"
+    }
      stages{
      
         stage("SCM Checkout"){
