@@ -1,4 +1,4 @@
-currentBuild.displayName = "Anek-Project #"+currentBuild.number
+currentBuild.displayName = "Anek-Project #"+currentBuild.number 
 pipeline{
     
     agent any 
