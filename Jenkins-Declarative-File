@@ -15,8 +15,13 @@ pipeline{
         }//stage
         
         stage("Maven Package"){
-         sh "mvn clean package"
-        }
+         
+         steps{
+               echo "Maven Clean"
+               sh "mvn clean package"
+         }
+         
+        }//stage
         
         
     }//stages
